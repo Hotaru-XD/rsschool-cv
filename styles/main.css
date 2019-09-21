@@ -1,0 +1,46 @@
+p {
+    margin: 0;
+}
+
+b {
+    font-style: italic;
+}
+
+header {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main-block {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+ol {
+    counter-reset: item;
+}
+
+ol li {
+    display: block;
+}
+
+ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    font-weight: bold;
+}
+
+.main-block__contact-block {
+    padding: 0;
+}
+
+.main-block section:not(.main-block__image), pre {
+    padding: 10px;
+    background-color: rgba(189, 245, 255, 0.4);
+    border-radius: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
